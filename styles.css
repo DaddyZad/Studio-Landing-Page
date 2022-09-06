@@ -754,17 +754,17 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 60vh;
+    height: 55vh;
 }
 .background2>.layer1>img{
     width: 50vw;
-    height: 60vh;
+    height: 50vh;
     padding-right: 50px;
     padding-top: 50px;
 }
 .background2>.layer1>.box{
-    width: 40vw;
-    height: 35vh;
+    width: 35vw;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     background: rgb(232, 230, 230);
@@ -773,8 +773,8 @@ a:hover {
 .background2>.layer1>.box::before{
     content: "";
     border: 3px solid black;
-    width: 40vw;
-    height: 35vh;
+    width: 35vw;
+    height: 30vh;
     position: absolute;
     top: 40px;
     left: 40px;
@@ -795,7 +795,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:60vh;
+    height:65vh;
 }
 .background2>.layer2>h1{
     font-family: 'Kanit', sans-serif;
