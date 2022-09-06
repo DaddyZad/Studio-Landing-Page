@@ -907,8 +907,8 @@ a:hover {
     font-family: 'Kaushan Script', cursive; 
     background: rgb(10, 38, 27);
     border-radius: 100%;
-    width: 30vw;
-    height: 30vw;
+    width: 15vw;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -919,8 +919,8 @@ a:hover {
     font-family: 'Kaushan Script', cursive;
     background: rgba(247, 247, 120, 0.5);
     border-radius: 100%;
-    width: 30vw;
-    height: 30vw;
+    width: 15vw;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -931,8 +931,8 @@ a:hover {
     font-family: 'Kaushan Script', cursive;
     background: rgb(232, 230, 230);
     border-radius: 100%;
-    width: 30vw;
-    height: 30vw;
+    width: 15vw;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
