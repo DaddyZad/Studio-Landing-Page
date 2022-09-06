@@ -1,0 +1,1041 @@
+/* MOBILE VIEW */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: red;
+}
+.background1 {
+    background-image: url(./Images/background1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+}
+.logo>img {
+    height: 7vh;
+    width: 7vh;
+}
+#navbarmobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbarmobile>li {
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+    letter-spacing: 2px;
+    margin: 0;
+    list-style-type: none;
+}
+#navbarbig {
+    display: none;
+}
+.background1>.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 10px;
+    height: 70vh;
+    text-align: center;
+}
+.background2 {
+    background: white;
+    height: 160vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.background2>.layer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+}
+.background2>.layer1>img {
+    width: 80vw;
+    height: 40vh;
+    padding-bottom: 5vh;
+}
+.background2>.layer1>.box {
+    width: 80vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(232, 230, 230);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.background2>.layer1>.box::before {
+    content: "";
+    border: 3px solid black;
+    width: 80vw;
+    height: 20vh;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.background2>.layer1>.box>h3 {
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    font-family: 'Kanit', sans-serif;
+}
+.background2>.layer1>.box>h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.background2>.layer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.background2>.layer2>h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+.background2>.layer2>h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.background2>.layer2>.paragraphmobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vw;
+    width: 90vw;
+    font-size: 0.9rem;
+    font-family: 'Kanit', sans-serif;
+}
+.background2>.layer2>.paragraphbig {
+    display: none;
+}
+.background2>.layer2>.paragraphmobile>p {
+    padding: 10px;
+}
+.background2>.layer2>a>h3 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+    border: 4px solid black;
+    padding: 8px;
+    letter-spacing: 2px;
+}
+.background2>.layer2>a>h3:hover {
+    border: 3px solid red;
+    padding: 7px;
+}
+.background3 {
+    background-image: url(./Images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+}
+.background4 {
+    background: white;
+    height: 250vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.background4>.layer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-top: 5vh;
+    position: relative;
+}
+.background4>.layer1>img {
+    padding-top: 5vh;
+    width: 80vw;
+    height: 40vh;
+}
+.background4>.layer1>.box {
+    width: 80vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    background: rgba(247, 247, 120, 0.5);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.background4>.layer1>.box::before {
+    content: "";
+    border: 3px solid black;
+    width: 80vw;
+    height: 20vh;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.background4>.layer1>.box>h3 {
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    font-family: 'Kanit', sans-serif;
+}
+.background4>.layer1>.box>h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.background4>.layer2 {
+    padding: 2vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.background4>.layer2>.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+    height: 60vh;
+}
+.background4>.layer2>.one>.circle1 {
+    color: white;
+    font-size: 5vh;
+    font-family: 'Kaushan Script', cursive;
+    background: rgb(10, 38, 27);
+    border-radius: 100%;
+    width: 30vh;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background4>.layer2>.one>.circle2 {
+    color: black;
+    font-size: 5vh;
+    font-family: 'Kaushan Script', cursive;
+    background: rgba(247, 247, 120, 0.5);
+    border-radius: 100%;
+    width: 30vh;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background4>.layer2>.one>.circle3 {
+    color: black;
+    font-size: 5vh;
+    font-family: 'Kaushan Script', cursive;
+    background: rgb(232, 230, 230);
+    border-radius: 100%;
+    width: 30vh;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background4>.layer2>.one>h3 {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    padding: 1vh;
+}
+.background4>.layer2>.one>.parmobile {
+    padding-bottom: 1vh;
+}
+.background4>.layer2>.one>.parbig {
+    display: none;
+}
+.background4>.layer2>.one>.parmobile>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.background4>.layer2>.one>a>h4 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+    border: 4px solid black;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+.background4>.layer2>.one>a>h4:hover {
+    border: 3px solid red;
+    padding: 9px;
+}   
+.background5 {
+    font-family: 'Kanit', sans-serif;
+    background: rgb(232, 230, 230);
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh;
+}
+.background5>img {
+    width: 7vh;
+    height: 7vh;
+}
+.background5>h1 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+.background5>p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+#mail {
+    border: 0;
+    width: 100px;
+    height: 36px;
+}
+.mail_label {
+    font-size: 1rem;
+    font-weight: bolder;
+    border: 4px solid black;
+    padding: 4px 10px;
+    letter-spacing: 3px;
+}
+.mail_label:hover {
+    padding: 3px 9px;
+    border: 3px solid red;
+}
+.icons {
+    width: 50vw;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+.fa-brands {
+    font-size: 1rem;
+    border: 3px solid black;
+    border-radius: 100%;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.fa-brands:hover {
+    border: 3px solid red;
+    color: red;
+}
+
+/* TAB VIEW */
+@media screen and (min-width:700px) {
+.container{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+.logo>img {
+    height: 9vh;
+    width: 9vh;
+}
+#navbarbig {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+}
+#navbarbig>li {
+    padding: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+    letter-spacing: 2px;
+    margin: 0;
+    list-style-type: none;
+}
+#navbarmobile {
+    display: none;
+}
+.background1>.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 10px;
+    height: 70vh;
+    text-align: center;
+    font-weight: lighter;
+}
+.background2 {
+    background: white;
+    height: 160vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.background2>.layer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+}
+.background2>.layer1>img {
+    width: 80vw;
+    height: 50vh;
+    padding-bottom: 5vh;
+}
+.background2>.layer1>.box {
+    width: 60vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(232, 230, 230);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.background2>.layer1>.box::before {
+    content: "";
+    border: 3px solid black;
+    width: 60vw;
+    height: 25vh;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.background2>.layer1>.box>h3 {
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+    font-family: 'Kanit', sans-serif;
+}
+.background2>.layer1>.box>h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+.background2>.layer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.background2>.layer2>h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+.background2>.layer2>h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.background2>.layer2>.paragraphbig {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vw;
+    width: 90vw;
+    font-size: 1rem;
+    font-family: 'Kanit', sans-serif;
+}
+.background2>.layer2>.paragraphmobile {
+    display: none;
+}
+.background2>.layer2>.paragraphbig>p {
+    padding: 10px;
+}
+.background2>.layer2>a>h3 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+    border: 4px solid black;
+    padding: 8px;
+    letter-spacing: 2px;
+}
+.background2>.layer2>a>h3:hover {
+    border: 3px solid red;
+    padding: 7px;
+}
+.background3 {
+    background-image: url(./Images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+}
+.background4 {
+    background: white;
+    height: 250vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.background4>.layer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+}
+.background4>.layer1>img {
+    padding-top: 5vh;
+    width: 80vw;
+    height: 50vh;
+}
+.background4>.layer1>.box {
+    width: 60vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    background: rgba(247, 247, 120, 0.5);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.background4>.layer1>.box::before {
+    content: "";
+    border: 3px solid black;
+    width: 60vw;
+    height: 25vh;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.background4>.layer1>.box>h3 {
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+    font-family: 'Kanit', sans-serif;
+}
+.background4>.layer1>.box>h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+.background4>.layer2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0;
+}
+.background4>.layer2>.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+}
+.background4>.layer2>.one>.circle1 {
+    color: white;
+    font-size: 5vh;
+    font-family: 'Kaushan Script', cursive;
+    background: rgb(10, 38, 27);
+    border-radius: 100%;
+    width: 30vh;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background4>.layer2>.one>.circle2 {
+    color: black;
+    font-size: 5vh;
+    font-family: 'Kaushan Script', cursive;
+    background: rgba(247, 247, 120, 0.5);
+    border-radius: 100%;
+    width: 30vh;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background4>.layer2>.one>.circle3 {
+    color: black;
+    font-size: 5vh;
+    font-family: 'Kaushan Script', cursive;
+    background: rgb(232, 230, 230);
+    border-radius: 100%;
+    width: 30vh;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background4>.layer2>.one>h3 {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    padding: 1vh;
+}
+.background4>.layer2>.one>.parbig {
+    display: contents;
+}
+.background4>.layer2>.one>.parmobile {
+    display: none;
+}
+.background4>.layer2>.one>.parbig>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.background4>.layer2>.one>a>h4 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+    border: 4px solid black;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+.background4>.layer2>.one>a>h4:hover {
+    border: 3px solid red;
+    padding: 9px;
+}   
+.background5 {
+    font-family: 'Kanit', sans-serif;
+    background: rgb(232, 230, 230);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh;
+}
+.background5>img {
+    width: 9vh;
+    height: 9vh;
+}
+.background5>h1 {
+    font-size: 2.2rem;
+    text-align: center;
+}
+.background5>p {
+    font-size: 1.3rem;
+    text-align: center;
+}
+#mail {
+    border: 0;
+    width: 150px;
+    height: 40px;
+}
+.mail_label {
+    font-size: 1rem;
+    font-weight: bolder;
+    border: 4px solid black;
+    padding: 4px 10px;
+    letter-spacing: 3px;
+}
+.mail_label:hover {
+    padding: 3px 9px;
+    border: 3px solid red;
+}
+.icons {
+    width: 30vw;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-brands {
+    font-size: 1rem;
+    border: 3px solid black;
+    border-radius: 100%;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.fa-brands:hover {
+    border: 3px solid red;
+    color: red;
+}
+}
+
+/* DESKTOP VIEW */
+@media screen and (min-width:1400px) {
+.background1{
+    background-image: url(./Images/background1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+.background1>.logo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+#navbarmobile{
+    display:none;
+}
+#navbarbig{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbarbig>li{
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+    letter-spacing: 2px;
+    margin: 0;
+    list-style-type: none;
+}
+.background1>.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40vh;
+    font-size: 6rem;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 10px;
+    font-weight: lighter;
+}
+.background2{
+    background: white;
+    height: 120vh;
+    width: 100%;
+}
+.background2>.layer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+}
+.background2>.layer1>img{
+    width: 50vw;
+    height: 60vh;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+.background2>.layer1>.box{
+    width: 40vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(232, 230, 230);
+    position: relative;
+}
+.background2>.layer1>.box::before{
+    content: "";
+    border: 3px solid black;
+    width: 40vw;
+    height: 35vh;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.background2>.layer1>.box>h3{
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-family: 'Kanit', sans-serif;
+}
+.background2>.layer1>.box>h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+.background2>.layer2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:60vh;
+}
+.background2>.layer2>h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    padding-bottom: 30px;
+    margin-top: 0;
+}
+.background2>.layer2>h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+
+}
+.background2>.layer2>.paragraph{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    width: 80vw;
+    font-size: 1.3rem;
+    font-family: 'Kanit', sans-serif;}
+.background2>.layer2>.paragraph>p{
+    padding: 40px;
+}
+.background2>.layer2>a>h3{
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+    border: 4px solid black;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+.background2>.layer2>a>h3:hover{
+    border: 3px solid red;
+    padding: 9px;
+}
+.background3{
+    background-image: url(./Images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+}
+.background4 {
+    background: white;
+    height: 130vh;
+    width: 100%;
+}
+.background4>.layer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 120px;
+    height: 60vh;
+}
+.background4>.layer1>img {
+    width: 50vw;
+    height: 60vh;
+    padding-left: 100px;
+}
+.background4>.layer1>.box {
+    width: 40vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    background: rgba(247, 247, 120, 0.5);
+    position: relative;
+}
+.background4>.layer1>.box::before {
+    content: "";
+    border: 3px solid black;
+    width: 40vw;
+    height: 35vh;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.background4>.layer1>.box>h3 {
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-family: 'Kanit', sans-serif;
+}
+.background4>.layer1>.box>h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+.background4>.layer2{
+    padding: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 70vh;
+}
+.background4>.layer2>.one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.background4>.layer2>.one>.circle1{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Kaushan Script', cursive; 
+    background: rgb(10, 38, 27);
+    border-radius: 100%;
+    width: 15vw;
+    height: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background4>.layer2>.one>.circle2 {
+    color: black;
+    font-size: 3rem;
+    font-family: 'Kaushan Script', cursive;
+    background: rgba(247, 247, 120, 0.5);
+    border-radius: 100%;
+    width: 15vw;
+    height: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background4>.layer2>.one>.circle3 {
+    color: black;
+    font-size: 3rem;
+    font-family: 'Kaushan Script', cursive;
+    background: rgb(232, 230, 230);
+    border-radius: 100%;
+    width: 15vw;
+    height: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background4>.layer2>.one>h3{
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    padding: 30px;
+}
+.background4>.layer2>.one>.par{
+    padding-bottom: 30px;
+}
+.background4>.layer2>.one>.par>p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.1rem;
+}
+.background4>.layer2>.one>a>h4{
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+    border: 4px solid black;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+.background4>.layer2>.one>a>h4:hover{
+        border: 3px solid red;
+        padding: 9px;
+}
+.background5{
+    font-family: 'Kanit', sans-serif;
+    background: rgb(232, 230, 230);
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+}
+.background5>img{
+    width: 120px;
+    height: 120px;
+}
+.background5>h1{
+    font-size: 2.5rem;
+}
+.background5>p{
+    font-size: 1.5rem;
+}
+#mail{
+    border: 0;
+    width: 300px;
+    height: 62px;
+}
+.mail_label{
+    font-size: 1rem;
+    font-weight: bolder;
+    border: 4px solid black;
+    padding: 16px 40px;
+    letter-spacing: 5px;
+    height: 45px;
+}
+.mail_label:hover{
+    padding: 14px 38px;
+    border: 3px solid red;
+}
+.icons{
+    width: 280px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+.fa-brands{
+    font-size: 1.8rem;
+    border: 5px solid black;
+    border-radius: 100%;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.fa-brands:hover{
+    border: 5px solid red;
+    color: red;
+}
+.fa-facebook-f{
+    font-size: 1.8rem;
+    border: 5px solid black;
+    border-radius: 100%;
+    padding: 10px 15px;
+}
+.fa-instagram{
+    font-size: 1.8rem;
+    border: 5px solid black;
+    border-radius: 100%;
+    padding: 10px 12px;
+}
+}

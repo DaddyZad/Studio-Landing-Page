@@ -1,0 +1,1077 @@
+/* h1 {
+  color: brown;
+  font-size: 2.5rem;
+}
+h2 {
+  color: blue;
+  font-size: 1.5em;
+}
+p {
+  color: black;
+} */
+/* css rules */
+/* whole ting is called the css box */
+/* element selectors == h1/h2/p/body */
+/* declaration box == { } */
+/* within the declaration box is the property */
+
+/* ------------------------------------------------------------- */
+/* h3,
+h4 {
+  color: blueviolet;
+  font-size: 1.5rem;
+} */
+/* id should be unique and different */
+/* #heading {
+  color: chocolate;
+  background: black;
+  font-size: 1.3em;
+} */
+/* class can be the same across different paragraphs or heading */
+/* .brown {
+  color: brown;
+  font-size: 1.2em;
+} */
+/* DIV SPAN are used to group */
+/* div is used to combine all(heading and paragraph) and div starts a new line */
+/* .yellow {
+  background: yellow;
+}
+div {
+  color: blueviolet;
+  font-size: 1.3em;
+} */
+/* span is used to select specific words */
+/* .red {
+  background: red;
+}
+span {
+  text-transform: uppercase;
+} */
+/* UNIVERSAL SELECTOR '*' this affects the whole browser */
+/* * {
+  color: blue;
+} */
+/* INHERITANCE */
+/* body {
+  font-family: monospace;
+  list-style: 1.5em;
+} */
+/* div {
+  color: blue;
+  border: 3px solid black;
+} */
+/* RGB COLORS(0 - 255) all 255 is white all 0 is black and examples */
+/* #first {
+  color: rgb(255, 0, 0);
+  background-color: rgb(0, 0, 0);
+} */
+/* #second {
+  color: rgb(0, 255, 0);
+  background: rgb(255, 255, 255);
+} */
+/* #three {
+  color: rgb(0, 0, 255);
+  background: rgb(100, 100, 100);
+} */
+/* body {
+  background-color: rgb(100, 206, 178);
+} */
+/* RGBA colors and example(last value is opacity value 0white - 1black) */
+/* #first {
+  color: rgb(40, 206, 3);
+  background: rgba(0, 0, 0, 0.5);
+} */
+/* #second {
+  color: rgb(0, 71, 34);
+  background: rgba(0, 0, 0, 0.2);
+} */
+/* HEX values #RRGGBB
+123456789 A(10) B(11) C(12) D(13) E(14) F(15)
+#FF0000 == red
+#00FF00 == green
+#0000FF == blue
+#000000 == black
+#FFFFFF == white
+*/
+/* #first {
+  color: #f01212e5;
+  background: rgba(0, 0, 0, 0.5);
+} */
+/* font-size, width, height, pixels */
+/* Absolute values stand alone */
+/* h1 {
+  font-size: 30px;
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+} */
+/* Relative values are dependant on parent element */
+/* .inner {
+  width: 100%;
+  height: 50%;
+  background: red;
+}
+.outer {
+  width: 500px;
+  height: 500px;
+  background: blue;
+} */
+/* 
+em - Relative depends on the parent container in the body of the code and other parents
+1em = 16px default browser style
+1em = base value
+rem doesnt depend on the parent container but the root container which is the html or default browser style(i.e if the user changes the root font-size, the font changes too)
+*/
+/* div {
+  font-size: 16px;
+}
+.relative {
+  font-size: 2em;
+}
+.absolute {
+  font-size: 32px;
+} */
+/* 
+vh - height - ?? percent of the screen
+vw - width - ?? percent of the screen
+*/
+/* .banner {
+  width: 50vw;
+  height: 50vh;
+  background: red;
+}
+.ban {
+  width: 100vw;
+  height: 100vw;
+  background: black;
+} */
+/* calc() to perform math operations + - * /
+mix and match values 
+this style below subtracts the navbar height from the banner height to make the full screen*/
+/* * {
+  margin: 0;
+}
+.navbar {
+  background: blue;
+  height: 100px;
+  color: white;
+  font-size: 3rem;
+}
+.banner {
+  background: red;
+  min-height: calc(100vh - 100px);
+} */
+/* font-family and types */
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+/* Using google fonts */
+/* By importing */
+/* @import url("https://fonts.googleapis.com/css2?family=Yesteryear&display=swap"); */
+/* font weight and style */
+/* h1 {
+  font-family: "Yesteryear", cursive;
+  font-weight: 700;
+  font-style: normal;
+} */
+/* text-align and text-indent */
+/* h1 {
+  text-align: center;
+}
+p {
+  text-indent: 50px;
+} */
+/* line-height
+letter-spacing
+word-spacing
+text-transform
+text-decoration
+*/
+/* .one {
+  line-height: 0.5em; height of line
+} */
+/* .one {
+  letter-spacing: 2px; space between letters
+} */
+/* .one {
+  word-spacing: 20px; space between words
+} */
+/* h1 {
+  text-transform: lowercase; capitalize, lowercase and uppercase
+} */
+/* a {
+  font-size: 40px;
+  text-decoration: ; #underline, overline, line-through, none
+} */
+/* CSS BOX MODEL
+Margin is distance drom border to edge of web or from border to next element
+Border is betwwen margin and padding
+Padding is distance between content and border
+Content */
+/* For Padding */
+/* h1 {
+  text-align: center;
+  background: red;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+p {
+  background: blue;
+  padding: 50px; used for all sides
+  padding: 30px 60px; first unit is for top&bottom, 2nd is for left&right
+  padding: 20px 40px 60px 10px; top right down left
+} */
+/* For Margin */
+/* * {
+  margin: 0;
+} */
+/* h1 {
+  text-align: center;
+  background: red;
+  margin: 30px;
+}
+p {
+  background: blue;
+  margin: 100px 20px 50px 80px;
+} */
+/* For Border */
+/* h1 {
+  text-align: center;
+  background: red;
+  border: 5px solid black;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: pink;
+} */
+/* p {
+  background: blue;
+  border: 10px solid yellow; first width then style then color
+  margin-top: -30%; negative value takes it in the other element area
+
+  border-bottom-style: dashed;
+  border-bottom-width: 10px;
+  border-bottom-color: black;
+  border: 20px solid red; first is width then style then color
+} */
+/* For Outline, it works just like border but has one more function */
+/* outline-offset: 10px; this will extend the outline out of the box
+outline-offset: -10px; this will bring the outline inside the box */
+/* adding the types of cursor
+h1 {
+  background-color: red;
+  cursor: pointer;
+} */
+/* Default display property
+Block - always start a new line (h1, p, div)
+Inline - Does not start a new line and only takes up as much content space necessary (span, img, a href)
+they can be chnaged from inline to block and vice versa */
+/* .block {
+  background: blue;
+  color: white;
+  display: inline;
+}
+.inline {
+  background: red;
+  color: white;
+  display: block;
+} */
+/* Horizontal Centering */
+/* body {
+  text-align: center;
+}
+.block {
+  background: blue;
+  color: white;
+  width: 150px;
+  margin: 10px auto; when left and right is on auto it centers the block
+  margin-left: auto;
+  margin-right: auto;
+}
+.inline {
+  background: red;
+  color: white;
+} */
+/* wrt padding and margin in mobile and website application
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul li {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  background-color: black;
+  color: orange;
+  display: block;
+  padding: 10px 10px;
+  margin: 10px;
+} */
+/* inline-block used to add margin to inline elements */
+/* a {
+  font-size: 60px;
+  background: red;
+  margin: 50px;
+  display: inline-block;
+} */
+/* box - sizing fits all the detais of the box model inside the box without increasing the size */
+/* .box1,
+.box2,
+.box3 {
+  width: 200px;
+  height: 200px;
+  color: white;
+}
+.box1 {
+  background: red;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.box2 {
+  background: blue;
+}
+.box3 {
+  background: yellow;
+  padding: 20px;
+} */
+/* display: none gets rid of the element
+opacity: 0 hides the element
+visbility: hidden hides the element */
+/* div {
+  background: blue;
+  margin: 10px;
+  color: white;
+}
+.none {
+  display: none;
+}
+.opacity-1 {
+  opacity: 1;
+}
+.opacity-0 {
+  opacity: 0;
+}
+.opacity-5 {
+  opacity: 0.5;
+}
+.visibility {
+  visibility: hidden;
+} */
+/* background:url('image.jpeg')
+background-repeat
+background-size
+background-position
+background-attachment
+shorthand syntax is position/size repeat attachment */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  min-height: 100vh;
+  text-transform: uppercase;
+  color: green;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.big-img {
+  background: url("./big.jpeg");
+  background-size: cover; used to fill the container or cover the whole div space
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; used to make the background image fixed while scrolling through the page
+  background-size: cover; used to fill the container or cover the whole div space
+}
+.small-img {
+  border: 2px solid red;
+  background: url("./small.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover; used to fill the container or cover the whole div space
+  background-position: center;
+  background-attachment: fixed; used to make the background image fixed while scrolling through the page
+
+  background-position: center; puts the image in the center
+  background-position: left; puts the image in the left
+  background-position: right; puts the image in the right
+  background-position: top; puts the image in the top
+  background-position: 20% 20%; x and y axis
+
+  background-repeat: repeat; to repeat the image
+  background-repeat: no-repeat; not to repeat the image
+  background-repeat: repeat-x; to repeat in the x direction
+  background-repeat: repeat-y; to repeat in the y direction
+  background-repeat: space; to space the image
+  background-repeat: round; to round the image up and dont cut out details but still repeated
+}
+.folder-img {
+  background: url("./folder\ image/img.jpeg");
+  background-size: cover; used to fill the container or cover the whole div space
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; used to make the background image fixed while scrolling through the page
+} */
+/* Gradient(direction, color, color, color etc ) */
+/* div {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+.one {
+  background: linear-gradient(to bottom, red, green); first is direction then 1st color the 2nd color wtc. NB: to bottom is default direction
+}
+.two {
+  background: linear-gradient(to top, red, green, blue, yellow); 
+}
+.three {
+  background: linear-gradient(90deg, red, green); moves to the 90deg direction
+}
+.four {
+  background: linear-gradient(to top left, red, green); moves to top left
+}
+.five {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)); using opacity in rgba colors
+}
+.six {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+} */
+/* how to put linear gradient in background images */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 60px;
+  color: orange;
+}
+.banner {
+  background: url("./big.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./big.jpeg") center/cover no-repeat fixed; to shorten background syntax position/size repeat attachment
+} */
+/* Using gradient colors from  the internet */
+/* .colorzilla {
+  copy the code from the site and paste here
+} */
+/* float is used to float our images to the left or right(whatever paragraph or wording doesnt start a new line)
+clear is used to make the images start a new line in what direction you're floating */
+/* .banner {
+  border: 5px solid red;
+  padding: 10px;
+  overflow: hidden; used to encage the image(children element) if it is spilling out of the parent element(div)
+}
+img {
+  float: left;
+}
+p {
+  clear: left;
+} */
+/* More specific examples on float */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  float: left;
+  height: 400px;
+  width: 33.3%;
+}
+.one {
+  background: red;
+}
+.two {
+  background: blue;
+}
+.three {
+  background: yellow;
+}
+h1 {
+  clear: both;
+} */
+/* Positions (Static - stays fixed in its position,
+Relative - moves relative to its former sitting position,
+Absolute - moves relative to its parent elements position if stated, if not it moves relative to the body
+Fixed - sets the element to a fix position (according to how stated regardless of scrolling ) */
+/* button {
+  background: red;
+  font-size: 40px;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+div {
+  border: 3px solid red;
+  background: yellow;
+  margin-top: 40px;
+  position: static;
+}
+.one {
+  background: blue;
+  position: relative;
+  top: 50px;
+  left: 20rem;
+}
+.two {
+  background: green;
+}
+.special {
+  background: lightcoral;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+/* Media Queries
+Responsive Design
+Style Elements on Different screen size
+min-width: Starting from
+max-width: up to
+Mobile First */
+/* Media Queries. Adjusting details based on screen size */
+/* body {
+  background: yellow;
+}
+.banner {
+  background: blue;
+}
+h1 {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+} */
+/* min width means starting from 900(which is the min width) there would be sometype of rule and changes
+there shold be no syntax error to make sure the media queries work and media queries can be multiple*/
+/* @media screen and (max-width:800px){
+  body{
+    background: red;
+  }
+  .banner{
+    background: yellow;
+  }
+  h1{
+    color: black;
+    font-size: 60px;
+  }
+}
+@media screen and (min-width:900px) {
+  body {
+    background: gray;
+  }
+
+  .banner {
+    background: green;
+  }
+
+  h1 {
+    color: red;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+  }
+} */
+/* z-index --- z-axis shows how closer to us the images or elements should be
+default index is: 0
+position:static --- does not work --- it remains fixed regardless */
+/* img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+.banner {
+  margin: 20px;
+  width: 80vw;
+  height: 70vh;
+  border: 5px solid red;
+  position: relative;
+}
+.one {
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.two {
+  top: 10%;
+  left: 10%;
+  z-index: -1;
+}
+.three {
+  top: 20%;
+  left: 20%;
+  z-index: -2;
+} */
+/* pseudo ekements ::before ::after CONTENT not element
+content:"" --- required(a must)
+img --- does not work */
+/* Very cool anmimated example of before and after */
+/* p::before{
+  content: "hello ";
+  display: block;
+  background: black;
+  font-weight: bold;
+  font-size: 2rem;
+  color: red;
+}
+p::after{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: green;
+}
+div {
+  width: 60vw;
+  margin: 100px auto;
+  position: relative;
+}
+img {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+div::before{
+  content: "";
+  border: 4px solid green;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  top: -50px;
+  left: -50px;
+  z-index: -2;
+  transition: all 0.5s linear;
+}
+div::after {
+  content: "";
+  background: green;  
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+  transition: all 0.5s linear;
+}
+div:hover::after,
+div:hover::before {
+  top: 0;
+  left: 0;
+} */
+/* Basic Selectors  */
+/* *{
+  color: red;
+}
+#heading  {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: green;
+}
+.heading {
+  font-size: 30px;
+  text-transform: capitalize;
+  color: blue;
+}
+p{
+  letter-spacing: 20px;
+} */
+/* Descendant and Child Combinators */
+/* div h1 { all children with element h1 will be affected
+  color: red;
+}
+div > h1 { only direct children with element h1 wil be affected
+  color: blue;
+}
+.header h1 { classes are more specific
+  color: green;
+}
+.header > h1 { classes are more specific
+  color: yellow;
+} */
+/* ::first-line ::first-letter */
+/* p::first-line{ to style the first line
+  font-weight: bold;
+}
+p::first-letter{ to style the first letter
+  font-size: 3rem;
+} */
+/* :hover */
+/* p:hover{
+  color: red;
+}
+.header:hover {
+  background: blue;
+  color: red;
+}
+a:hover {
+  text-decoration: none;
+} */
+/* :link :visited :hover :active */
+/* a:link { normal link color
+  color:red;
+}
+a:visited { displasy what an already clicked link should show
+  color: green;
+}
+a:hover { displys what should show when hovering on the link
+  color: black;
+  text-transform: uppercase;
+}
+a:active { displays what should show for the millisecond when you click
+  color: blueviolet;
+} */
+/* :root --- root element of the document
+html element
+general styles
+css variables */
+/* :root{
+  background: red;
+  font-size: 50%; so it will be 8px
+}
+h1 {
+  font-size: 3rem;
+}
+.absolute {
+  font-size: 32px;
+}
+.responsive {
+  font-size: 2rem;
+} */
+/* transform.translate(), rotate(), scale(), skew()
+transition (change over time)
+animation: (change over time with points) */
+/* translate() moves it to the X or Y axis -ve or +ve */
+/* div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+.one {
+  background: red;
+  transform: translateX(50%);
+}
+.two {
+  background: yellow;
+  transform: translateY(30px);
+}
+.three {
+  background: green;
+  transform: translate(50px, 50px);
+} */
+/* scale() used to make it bigger or smaller in the x or why direction. 1 is default size, 2 doubles it, 0.5 halfs it */
+/* div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+.one {
+  background: red;
+  transform: scaleX(0.5);
+}
+.two {
+  background: yellow;
+  transform: scaleY(2);
+}
+.three {
+  background: green;
+  transform: scale(2, 0.4);
+} */
+/* rotate() used to roatate in the X, Y or Z azix */
+/* div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+.one {
+  background: red;
+    transform: rotateX(60deg); flips in the X direction
+}
+.two {
+  background: yellow;
+    transform: rotateY(40deg); flips in the Y direction
+}
+.three {
+  background: green;
+  transform: rotateZ(45deg); flips in the Z direction
+  transform: rotate(45deg); flips in the Z direction
+} */
+/* skew() used to skew the object in the X or Y direction or both */
+/* div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+.one {
+  background: red;
+  transform: skewX(20deg); skews in the X direction
+}
+.two {
+  background: yellow;
+    transform: skewY(-20deg); skews in the Y direction
+}
+.three {
+  background: green;
+    transform: skew(40deg, -20deg); skews in the X & Y direction
+} */
+/* transition
+transition-property: this is the name of the property to be transitioned
+transition-duration this is the duration of the property to be transitioned*/
+/* div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+div:hover{
+  background: coral;
+}
+.one {
+  background: red;
+}
+.two {
+  background: yellow;
+}
+.three {
+  background: green;
+  transition-property: background, border-radius; names of property"background & border-radius"
+  transition-duration: 2s, 5s; duration of property "2s & 5s" respectively
+}
+.three:hover {
+  border-radius: 50%;
+} */
+/* transition-delay and quick short-hand */
+/* div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+.one {
+  background: red;
+}
+.two {
+  background: yellow;
+}
+.three {
+  background: green;
+  transition: background 2s 1s, border-radius 2s 1s; transition-property duration delay
+  transition: all 2s 1s; to transition all the properties (all time-duration time-delay)
+  transition-delay: 3s; time-taken for the transition to take place
+}
+.three:hover {
+  border-radius: 50%;
+  background: coral;
+} */
+/* how the transition takes place
+transition-timing-function:
+transition: all 3s ease/linear 5s;   so first is (property duration timing-function delay)
+ease is the default
+ease is slow start then fast then slow end 
+linear is same speed from start to end
+ease-in is slow start
+ease-out is slow end
+ease in out is slow start then fast then slow end */
+/* div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: yellow;
+  margin: 15px;
+  font-size: 1.5rem;
+  transition: all 1s;
+}
+div:hover {
+  transform: translateX(100px);
+}
+.ease {
+  transition-timing-function: ease;
+}
+.linear {
+  transition-timing-function: linear;
+}
+.ease-in {
+  transition-timing-function: ease-in;
+}
+.ease-out {
+  transition-timing-function: ease-out;
+}
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+} */
+/* Transition 0 - 100% */
+/* Animation 0 1% 2% ...... 100% */
+/* div {
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  color: red;
+  font-size: 1.5rem;
+}
+.transition {
+  background: yellow;
+  transition: all 2s linear;
+}
+.transition:hover {
+  background: blueviolet;
+  transform: translateX(100px);
+}
+.animation {
+  background: green;
+  animation-name: move; name of the animation(should correlate with the @keyframes name)
+  animation-duration: 10s; duration of the animation
+  animation-iteration-count: 2; amount of times it should be animated
+  animation: move 5s infinite; first the name then duration then count
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(20px);
+  }
+
+  50% {
+    transform: translateX(100px);
+    background: black;
+  }
+
+  75% {
+    transform: translateX(-200px);
+    background: blue;
+  }
+
+  100% {
+    transform: translateX(20px);
+    background: orange;
+  }
+} */
+/* animation-fill-mode
+forward - makes it go back to the last values
+backward(default) - takes it to the original position */
+/* div {
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  color: red;
+  font-size: 1.5rem;
+}
+.animation {
+  background: green;
+  animation: move 5s 2;
+  animation-fill-mode: forwards; makes it go back to the last values
+}
+@keyframes move {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    transform: translate(200px);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translate(-100px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px);
+    opacity: 0.5;
+  }
+} */
+/* CSS Variables(Custom properties)
+hold/store a value and reuse it
+--varName:value
+property:var(--varName)
+scope
+:root{} === global
+element === local
+any property */
+/* :root { can only be used anywhere
+  --primarycolor:#f15025; 
+  --secondaryColor: #1313fa;
+  --mainTransition: all 1s linear 0.5s;
+}
+.heading {
+  color:var(--primarycolor);
+}
+.second-heading {
+  color: var(--primarycolor);
+  transition: var(--mainTransition);
+}
+.second-heading:hover {
+  color: var(--secondaryColor);
+}
+div {
+  --primaryred: green; can only be used locally (i.e parent element)
+  ;
+}
+.main-text{
+  color:var(--primaryred) can only be used locally (i.e parent element)
+} */
+/* ICONS
+Font-Awesome Icons
+Go-to fontawesome to get fonts */
+/* <i class="fa-solid fa-house fa-2x"></i>
+<i class="fas fa-home fa-2xl"></i>
+NOTE: THIS SHOULD BE DONE IN THE HTML FILE */
+/* font sizes(add to html class)
+fa-2xs - 0.625em - 10px
+fa-xs - 0.75em - 12px
+fa-sm - 0.875em - 14px
+fa-lg - 1.25em - 20px
+fa-xl - 1.5em - 24px
+fa-2xl - 2em - 32px */
+/* .fa-home { TO STYLE THE ICON USING THE NAME
+  color: green;
+  font-size: 50px;
+} */
+/* text-shadow --- shadow of text --- go to text shadow generator to get auto TS
+box-shadow --- shadow of box --- go to box shadow generator to get auto BS */
+/* h1 {
+  text-shadow: -5px -5px 15px red; first is the x-axis then the y-axis then blurry(1 is less blurry and 10 is more blurry) then color
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  margin: 50px;
+  box-shadow: 10px 10px 5px green; first is the x-axis then the y-axis then blurry(1 is less blurry and 10 is more blurry) then color
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  margin: 50px;
+  transition: box-shadow 1s linear;
+}
+.box:hover {
+  box-shadow: 10px 10px 5px green;
+} */
+/* Browser Prefixes
+Go-to Caniuse.com or autoprefixer to use quick browser prefixes */
+/* Semantic HTML check it out on w3schools */
