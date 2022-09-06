@@ -977,18 +977,18 @@ a:hover {
     padding: 40px;
 }
 .background5>img{
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
 }
 .background5>h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .background5>p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 #mail{
     border: 0;
-    width: 300px;
+    width: 250px;
     height: 62px;
 }
 .mail_label{
@@ -1013,7 +1013,7 @@ a:hover {
     padding: 5px;
 }
 .fa-brands{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     border: 5px solid black;
     border-radius: 100%;
     padding: 10px;
@@ -1025,13 +1025,13 @@ a:hover {
     color: red;
 }
 .fa-facebook-f{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     border: 5px solid black;
     border-radius: 100%;
     padding: 10px 15px;
 }
 .fa-instagram{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     border: 5px solid black;
     border-radius: 100%;
     padding: 10px 12px;
