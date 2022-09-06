@@ -853,16 +853,16 @@ a:hover {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 120px;
-    height: 60vh;
+    height: 50vh;
 }
 .background4>.layer1>img {
     width: 50vw;
-    height: 60vh;
+    height: 40vh;
     padding-left: 100px;
 }
 .background4>.layer1>.box {
-    width: 40vw;
-    height: 35vh;
+    width: 35vw;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     background: rgba(247, 247, 120, 0.5);
@@ -871,8 +871,8 @@ a:hover {
 .background4>.layer1>.box::before {
     content: "";
     border: 3px solid black;
-    width: 40vw;
-    height: 35vh;
+    width: 35vw;
+    height: 30vh;
     position: absolute;
     top: 40px;
     left: 40px;
@@ -893,7 +893,7 @@ a:hover {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    height: 70vh;
+    height: 80vh;
 }
 .background4>.layer2>.one{
     display: flex;
