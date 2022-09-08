@@ -64,6 +64,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 30px;
 }
 .background2>.layer1 {
     display: flex;
@@ -169,6 +170,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 30px;
 }
 .background4>.layer1 {
     display: flex;
