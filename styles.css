@@ -304,7 +304,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 4vh;
+    padding: 2vh;
 }
 .background5>img {
     width: 7vh;
@@ -314,12 +314,15 @@ a:hover {
 .background5>h1 {
     font-size: 1.7rem;
     text-align: center;
-    padding: 2vh;
+    padding: 1vh;
 }
 .background5>p {
     font-size: 1.1rem;
     text-align: center;
-    padding: 2vh;
+    padding: 1vh;
+}
+.form{
+    padding: 1vh;
 }
 #mail {
     border: 0;
