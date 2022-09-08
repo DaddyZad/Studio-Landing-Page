@@ -228,7 +228,6 @@ a:hover {
     justify-content: center;
     align-items: center;
     padding: 1vh;
-    height: 60vh;
 }
 .background4>.layer2>.one>.circle1 {
     color: white;
@@ -301,7 +300,6 @@ a:hover {
     font-family: 'Kanit', sans-serif;
     background: rgb(232, 230, 230);
     width: 100%;
-    height: 55vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -568,7 +566,6 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 55vh;
 }
 .background4>.layer2>.one>.circle1 {
     color: white;
@@ -641,7 +638,6 @@ a:hover {
     font-family: 'Kanit', sans-serif;
     background: rgb(232, 230, 230);
     width: 100%;
-    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -928,6 +924,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .background4>.layer2>.one>h3{
     font-family: 'Kanit', sans-serif;
@@ -958,23 +955,24 @@ a:hover {
     font-family: 'Kanit', sans-serif;
     background: rgb(232, 230, 230);
     width: 100%;
-    height: 60vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 40px;
 }
 .background5>img{
     width: 120px;
     height: 120px;
+    padding: 10px;
 }
 .background5>h1{
     font-size: 2.5rem;
+    padding: 10px;
 }
 .background5>p{
     font-size: 1.5rem;
+    padding: 20px;
 }
 #mail{
     border: 0;
