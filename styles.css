@@ -304,19 +304,22 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 1vh;
+    padding: 4vh;
 }
 .background5>img {
     width: 7vh;
     height: 7vh;
+    padding: 2vh;
 }
 .background5>h1 {
     font-size: 1.7rem;
     text-align: center;
+    padding: 2vh;
 }
 .background5>p {
     font-size: 1.1rem;
     text-align: center;
+    padding: 2vh;
 }
 #mail {
     border: 0;
@@ -642,19 +645,22 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 1vh;
+    padding: 4vh;
 }
 .background5>img {
     width: 9vh;
     height: 9vh;
+    padding: 2vh;
 }
 .background5>h1 {
     font-size: 2.2rem;
     text-align: center;
+    padding: 2vh;
 }
 .background5>p {
     font-size: 1.3rem;
     text-align: center;
+    padding: 2vh;
 }
 #mail {
     border: 0;
